@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+
+<div id="footer">
+    <div class="blank40px"></div>
+    <div class="bottomwrap">
+        <ul>
+            <li class="bottomlist"><a href="index.html"><img src="image/bottomlogo.png" alt="logo" border="0"/></a>
+            </li>
+            <li class="bottomlist">
+                <ul>
+                    <li class="btitle"><a href="start.html">预订服务</a></li>
+                    <li><a href="sheyingshi.html">摄影师</a></li>
+                    <li><a href="hunsha.html?id=21">婚纱礼服</a></li>
+                    <li><a href="paiji.html">产品定制</a></li>
+                    <li><a href="appreciation.html">照片赏析</a></li>
+                </ul>
+            </li>
+            <li class="bottomlist">
+                <ul>
+                    <li class="btitle"><a href="service.html">帮助服务</a></li>
+                    <li><a href="service.html?id=5001">摄影服务协议</a></li>
+                    <li><a href="service.html?id=5002">照片版权说明</a></li>
+                    <li><a href="service.html?id=5003">服装租赁条款</a></li>
+                    <li><a href="service.html?id=5004">意外保险</a></li>
+                    <li><a href="service.html?id=5005">Q & A</a></li>
+                </ul>
+            </li>
+            <li class="bottomlist">
+                <ul>
+                    <li class="btitle"><a href="select.html">关于我们</a></li>
+                    <li><a href="service.html">服务流程</a></li>
+                    <li><a href="select.html?id=1">联系我们</a></li>
+                </ul>
+            </li>
+            <li class="bottomlist">
+                <ul>
+                    <li class="btitle">微信公众号</li>
+                    <li><img src="image/bottomwx.jpg" alt="er"/></li>
+                </ul>
+            </li>
+            <li class="bottomlist">
+                <ul>
+                    <li class="btitle">新浪微博</li>
+                    <li><img src="image/bottomwb.jpg" alt="er"/></li>
+                    <li><a href="">ICP证粤ICP备15080415号-3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("#showqq").hover(function () {
+            $('#erweima').children('img').attr('src', 'image/qq.jpg');
+            $('#erweima').css("margin-top", "0");
+            $('#erweima').show();
+        },function(){
+            $('#erweima').hide();
+        });
+        $("#showwx").hover(function () {
+            $('#erweima').children('img').attr('src', 'image/qq1.jpg');
+            $('#erweima').css("margin-top", "50px");
+            $('#erweima').show();
+        },function(){
+            $('#erweima').hide();
+        });
+        $("#showwb").hover(function () {
+            $('#erweima').children('img').attr('src', 'image/qq2.jpg');
+            $('#erweima').css("margin-top", "100px");
+            $('#erweima').show();
+        },function(){
+            $('#erweima').hide();
+        });
+        $("#showdh").hover(function () {
+            $('#erweima').children('img').attr('src', 'image/qq3.jpg');
+            $('#erweima').css("margin-top", "150px");
+            $('#erweima').show();
+        },function(){
+            $('#erweima').hide();
+        });
+    });
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.fdlct').stickUp({
+                marginTop: 'auto'
+            });
+        });
+    });
+</script>
+<div id="example">
+    <div id="erweima"><img src=""/></div>
+    <div class="exright">
+        <ul>
+            <li id="showqq"></li>
+            <li id="showwx"></li>
+            <li id="showwb"></li>
+            <li id="showdh"></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
